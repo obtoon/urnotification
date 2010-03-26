@@ -20,6 +20,10 @@ $plugins->add_hook("datahandler_user_update", "urnotification_update");
 // Send out notifications to willing referenced users when a new reply is made.
 $plugins->add_hook("newreply_do_newreply_end", "urnotification_notifyusers");
 
+// TODO: Attach event handlers to the new reply text box and the ajax reply textbox.
+// The javascript is already in place (jscripts/urnotification.js). Figure out the hooks and insert javascript at end of appropriate page.
+// init() function in Javascript may require a change
+
 
 // TODO: for some reason these variables dont work when used in functions below.
 $template_search_text = '{$lang->pm_notify}</label></span></td>';
