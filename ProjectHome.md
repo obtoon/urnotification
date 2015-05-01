@@ -1,0 +1,1 @@
+MyBB plugin to notify users by email when their username is referenced in a post - preceded by an '@' character.
